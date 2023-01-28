@@ -31,8 +31,7 @@ function addInCartCountChange(value) {
     difference = delta;
     let newSum;
     newSum = oldSum + difference;
-    let newSumText;
-    newSumText = newSum + ' ₽';
+    let newSumText = newSum + ' ₽';
     newSumText = `${newSum} ₽`; 
     console.log(newSum);
     return newSum;
