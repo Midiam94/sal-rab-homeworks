@@ -19,7 +19,7 @@ function addInCartMessage(title, price) {
 function addInCartCountChange(value) {
     let oldValue = value;
     let newValue;
-    newValue += 1;
+    newValue = newValue+1;
     console.log(newValue);
     return newValue;
 }
