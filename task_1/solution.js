@@ -32,7 +32,7 @@ function addInCartCountChange(value) {
     let newSum;
     newSum = oldSum + difference;
     let newSumText;
-    newSumText = newSum + `₽`;
+    newSumText = newSum + ' ₽';
     newSumText = `${newSum} ₽`; 
     console.log(newSum);
     return newSum;
