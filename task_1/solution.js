@@ -4,8 +4,14 @@ function addInCartMessage(title, price) {
 
     // Задание №1.1. Оповещение о добавлении в корзину
 
-    let message = productName + "за" += productPrice + "теперь в корзине!"; 
-    
+    let message;
+    message = productName;
+    message = message + " ";
+    message = message + "за";
+    message = message + productPrice;
+    message = message + " ";
+    message = message + "теперь в корзине!";
+
     console.log(message)
    
     // добавьте в конец переменной message пробел
@@ -22,8 +28,8 @@ function addInCartCountChange(value) {
 
     // Задание №1.2. Увеличение количества в корзине
     let oldValue = value;
-    let newValue = oldValue;
-    newValue = newValue + 1;
+    let newValue;
+    newValue = += 1;
     
     console.log(newValue)
     
@@ -35,7 +41,7 @@ function addInCartCountChange(value) {
     return newValue;
 }
 // Задание №1.3. Увеличение суммы в корзине
-function addInCartSumChange(sum, delta) {
+    function addInCartSumChange(sum, delta) {
     let oldSum = sum;
     let difference = delta;
     let newSum = oldSum + difference;
