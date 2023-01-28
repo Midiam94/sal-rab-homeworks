@@ -55,3 +55,4 @@ function addInCartCountChange(value) {
     return newSumText;
 }
 
+
