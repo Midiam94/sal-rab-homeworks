@@ -38,7 +38,7 @@ function addInCartCountChange(value) {
         
         console.log(newSumText);
         
-        return newSum;
+        return newSumText;
 }
 
 
