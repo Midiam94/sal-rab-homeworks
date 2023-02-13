@@ -40,8 +40,8 @@ function sendRequest(name, phone, address, goods, sum) {
             sum,
             address: `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor} этаж, кв. ${address.flat}`
         },
-        goods
+        goods: goods.map(({ title, count }) => ({ title, count }))
     };
 
-    return JSON.stringify(data, null, 4);
+    return JSON.stringify({data});
 }
