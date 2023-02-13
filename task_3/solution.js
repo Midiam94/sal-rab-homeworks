@@ -1,5 +1,14 @@
 function renderCartItem(item) {
     const product = item;
+    const itemCountText = `${product.count} × ${product.price} ₽ = ${product.count * product.price} ₽`;
+    // const sum = product.count * product.price;
+
+    // itemCountText += product.count;
+    // itemCountText += ' × ';
+    // itemCountText += product.price;
+    // itemCountText += ' ₽ = ';
+    // itemCountText += sum;
+    // itemCountText += ' ₽';
 
     // Задание №3.1. Формирование строки корзины
 
@@ -27,3 +36,5 @@ function renderCartItem(item) {
 
     return `<div class="cart-item"><div>${product.title}</div><div>${itemCountText}</div></div>`;
 }
+
+console.log(renderCartItem({id: 1, title: 'Пицца', count: 5, price: '500.00'}));
